@@ -1,0 +1,42 @@
+﻿@model MVCScholl.Models.SubjectModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SubjectModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.subid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subdesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subdesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
